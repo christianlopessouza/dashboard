@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter';
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-main-1: #141414;
+    --color-main-2: #222224;
+    --color-main-3: #3C3C3E;
+    --color-main-4: #C1C1C1;
+    --color-main-5: #393939;
+    --color-main-6: #A4A4A4;
+
+    --color-secondary-1: #ffffff;
+
+    --color-std-1: #ADFB1B;
+}
+
+ul,
+li {
+    list-style-type: none;
+    white-space: nowrap;
+    padding: 0;
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: var(--color-main-1);
+    color: var(--color-secondary-1);
+}
+
+aside#left-menu {
+    position: fixed;
+    height: 100vh;
+    width: 40rem;
+    padding: 1rem;
+    border-right: 0.1rem solid var(--color-main-5);
+    gap: 1.2rem
+}
+
+main#content {
+    padding-left: 40rem;
+    width: 7.4rem;
+}
+
+section#sub-menu-categories {
+    width: 7.4rem;
+    border-radius: 1.2rem;
+    border: 0.1rem solid var(--color-main-5);
+    background-color: var(--color-main-2);
+    padding: 1rem
+}
+
+.squared-rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+
+}
+
+section#sub-menu-categories #main-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-color: var(--color-main-1);
+    border: 0.1rem solid var(--color-main-5);
+}
+
+
+section#sub-menu-categories .menu-list ul {
+    gap: 0.4rem
+}
+
+section#sub-menu-categories .menu-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+section#sub-menu-categories .menu-list li.active {
+    background: red;
+    background-color: var(--color-main-3);
+}
+
+section#sub-menu-categories #logged-user {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-color: var(--color-std-1);
+    color: var(--color-main-1);
+}
+
+section#sub-menu-categories .tool-bar li {
+    font-size: 1.6rem;
+}
+
+section#main-menu {
+    padding: 2rem 1rem;
+}
+
+section#main-menu #project-logo>div {
+    background: var(--color-std-1);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    color: var(--color-main-1);
+
+}
+
+section#main-menu #project-logo>span {
+    color: var(--color-std-1);
+    font-weight: 600;
+}
+
+section#main-menu #project-select:last-child {
+    color: var(--color-main-4)
+}
+
+section#main-menu #menu-list h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-main-4);
+}
+
+section#main-menu #menu-list {
+    font-size: 1.4rem;
+}
+
+section#main-menu #menu-list li {
+    font-weight: 600;
+    margin: 0.5rem 0;
+    padding: 0.6rem 0.85rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+section#main-menu #menu-list li .counter {
+    background-color: var(--color-main-3);
+    color: var(--color-secondary-1);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+section#main-menu #menu-list li:last-child {
+    margin-bottom: 0 !important;
+}
+
+section#main-menu #menu-list li.active {
+    background: red;
+    border-radius: 0.6rem;
+    background-color: var(--color-main-3);
+}
+
+section#main-menu #menu-list .category {
+    border-bottom: 1px solid var(--color-main-3);
+    padding: 2rem 0;
+    margin-top: 0.5rem;
+}
+
+section#main-menu #menu-list .category ul {
+    margin: 0;
+}
+
+section#main-menu #menu-list .category:last-child {
+    border-bottom: 0;
+}
+
+#target-bar .title i {
+    color: var(--color-std-1);
+}
+
+#target-bar .title span {
+    font-weight: 500;
+}
+
+#target-bar progress {
+    height: 0.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+
+
+#target-bar progress::-webkit-progress-value {
+    background-color: var(--color-std-1);
+    border-radius: 2rem;
+}
+
+#target-bar .description {
+    color: var(--color-main-4);
+}
+
+.spaced {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+
+
+main#content header {
+    height: 9.5rem;
+    padding: 0 3rem;
+}
+
+#web-route-info {
+    display: flex;
+    gap: 2rem;
+    color: var(--color-main-4)
+}
+
+#web-route-info>li:last-child {
+    color: var(--color-secondary-1)
+}
+
+#web-route-info>li:not(:last-child):after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Pro";
+    margin-left: 2rem;
+}
